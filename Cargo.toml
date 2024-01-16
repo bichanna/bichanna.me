@@ -4,3 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# primary framework
+rocket = { version = "0.5", features = [ "secret" ] }
+# template engine
+tera = { version = "1", default-features = false }
+# template engine integration with rocket
+rocket_dyn_templates = { version = "0.1", features = [ "tera" ] }
+# database support
+sea-orm = { version = "0.12", features = [ "sqlx-sqlite", "runtime-tokio-rustls", "with-chrono", "macros" ] }
+# async runtime
+tokio = { version = "1.35", features = [ "full" ] }
+# .env
+dotenv = "0.15.0"
+# markdown to html converter
+markdown = "0.3"
