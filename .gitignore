@@ -2,3 +2,4 @@
 /migration/target
 .env
 sqlite.db
+.DS_Store
