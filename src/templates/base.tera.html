@@ -10,6 +10,30 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="TODO">
+          <img src="/media/images/web-icon.png" width="112" height="28" alt="brand image" />
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="mainNavbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="TODO">home</a>
+          <a class="navbar-item" href="TODO">about</a>
+          <a class="navbar-item" href="https://github.com/bichanna">
+            <img src="/media/images/github-mark.png" alt="github" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
     <!-- Actual content -->
     <div id="content">{% block content %}{% endblock content %}</div>
 
